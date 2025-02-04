@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YouTube Comment Manager</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>YouTube Comment Manager</h1>
+            <button id="login-btn" class="btn btn-primary">
+                <i data-lucide="log-in"></i>
+                Login with Google
+            </button>
+            
+            <div id="video-list" class="hidden">
+                <h2>Your Videos</h2>
+                <ul id="videos" class="video-grid"></ul>
+            </div>
+            
+            <div id="comments-section" class="hidden">
+                <h2>Manage Comments</h2>
+                <div class="btn-group">
+                    <button id="like-comments" class="btn btn-secondary">
+                        <i data-lucide="thumbs-up"></i>
+                        Like All Comments
+                    </button>
+                    <button id="delete-comments" class="btn btn-danger">
+                        <i data-lucide="trash-2"></i>
+                        Delete Filtered Comments
+                    </button>
+                </div>
+                <ul id="comments"></ul>
+            </div>
+        </div>
+    </body>
+</html>
